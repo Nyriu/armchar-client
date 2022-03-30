@@ -1,0 +1,1269 @@
+{
+  "@context" : {
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "arm" : "https://hg.schaathun.net/armchar/schema#",
+    "armr" : "https://hg.schaathun.net/armchar/resources#",
+    "armab" : "https://hg.schaathun.net/armchar/resources/abilities#",
+    "armchar" : "https://hg.schaathun.net/armchar/character/"
+  },
+  "@graph" : [ {
+    "@id" : "armchar:cieran#summer1217",
+    "@type" : "arm:CharacterSheet",
+    "arm:atSeason" : "Summer",
+    "arm:atSeasonTime" : {
+      "@id" : "arm:summer1217",
+      "@type" : [ "rdfs:Resource", "owl:Thing", "arm:SeasonTime" ],
+      "arm:isYear" : 1217
+    },
+    "arm:hasAbility" : [ {
+      "@id" : "_:b16",
+      "@type" : [ "arm:XPTrait", "rdfs:Resource", "_:b8", "arm:Trait", "owl:Thing", "armab:conc", "arm:GeneralAbility", "arm:Ability", "_:b2", "arm:SuperTrait" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Concentration",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Spell Concentration",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b25",
+      "@type" : [ "owl:Thing", "arm:XPTrait", "arm:SuperTrait", "rdfs:Resource", "armab:magictheory", "arm:Ability", "arm:Trait", "_:b8", "_:b2", "arm:ArcaneAbility" ],
+      "arm:addedXP" : 30,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Magic Theory",
+      "arm:hasScore" : 3,
+      "arm:hasSpeciality" : "Spells",
+      "arm:hasTotalXP" : 30,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b31",
+      "@type" : [ "arm:Trait", "arm:SuperTrait", "arm:Ability", "_:b8", "armab:parmamagica", "arm:XPTrait", "arm:ArcaneAbility", "_:b2", "owl:Thing", "rdfs:Resource" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Parma Magica",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Mentem",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b38",
+      "@type" : [ "_:b2", "arm:Trait", "arm:SuperTrait", "owl:Thing", "arm:Ability", "arm:XPTrait", "arm:GeneralAbility", "rdfs:Resource", "_:b8", "armab:folkken" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Folk Ken",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Villagers",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b41",
+      "@type" : [ "arm:GeneralAbility", "arm:SuperTrait", "arm:Ability", "rdfs:Resource", "_:b8", "owl:Thing", "arm:Trait", "armab:stealth", "arm:XPTrait", "_:b2" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Stealth",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Hiding",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b44",
+      "@type" : [ "arm:XPTrait", "rdfs:Resource", "armab:hermescode", "_:b8", "owl:Thing", "arm:SuperTrait", "_:b2", "arm:Ability", "arm:ArcaneAbility", "arm:Trait" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Code of Hermes",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Stonehenge",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b46",
+      "@type" : [ "rdfs:Resource", "armab:arealore-ireland", "_:b2", "arm:SuperTrait", "arm:Ability", "arm:Trait", "owl:Thing", "_:b8", "arm:GeneralAbility", "armab:arealore", "arm:XPTrait" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Area Lore: Ireland",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Legends",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b47",
+      "@type" : [ "_:b2", "owl:Thing", "arm:MartialAbility", "armab:bows", "rdfs:Resource", "arm:Ability", "_:b8", "arm:XPTrait", "arm:Trait", "arm:SuperTrait" ],
+      "arm:addedXP" : 30,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Bows",
+      "arm:hasScore" : 3,
+      "arm:hasSpeciality" : "Longbow",
+      "arm:hasTotalXP" : 30,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b55",
+      "@type" : [ "arm:Ability", "armab:brawl", "_:b8", "owl:Thing", "arm:XPTrait", "arm:Trait", "arm:GeneralAbility", "rdfs:Resource", "_:b2", "arm:SuperTrait" ],
+      "arm:addedXP" : 15,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Brawl",
+      "arm:hasScore" : 2,
+      "arm:hasSpeciality" : "Dodge",
+      "arm:hasTotalXP" : 15,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b61",
+      "@type" : [ "arm:XPTrait", "_:b2", "arm:Trait", "arm:GeneralAbility", "armab:awareness", "_:b8", "rdfs:Resource", "owl:Thing", "arm:Ability", "arm:SuperTrait" ],
+      "arm:addedXP" : 15,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Awareness",
+      "arm:hasScore" : 2,
+      "arm:hasSpeciality" : "searching",
+      "arm:hasTotalXP" : 15,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b64",
+      "@type" : [ "armab:livinglanguage", "_:b8", "arm:SuperTrait", "owl:Thing", "arm:XPTrait", "arm:GeneralAbility", "arm:Ability", "rdfs:Resource", "armab:gaelic", "arm:Trait", "_:b2" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Living Language: Gaelic",
+      "arm:hasScore" : 5,
+      "arm:hasSpeciality" : "Leinster",
+      "arm:hasTotalXP" : 75,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b65",
+      "@type" : [ "arm:SuperTrait", "_:b8", "_:b2", "arm:Ability", "arm:GeneralAbility", "owl:Thing", "arm:XPTrait", "rdfs:Resource", "armab:bargain", "arm:Trait" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Bargain",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : null,
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b81",
+      "@type" : [ "_:b8", "armab:arealore", "arm:Ability", "arm:SuperTrait", "arm:XPTrait", "owl:Thing", "_:b2", "arm:Trait", "armab:arealore-munster", "arm:GeneralAbility", "rdfs:Resource" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Area Lore: Munster",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Hiding places",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b86",
+      "@type" : [ "arm:Ability", "owl:Thing", "arm:Trait", "armab:craft-fletching", "rdfs:Resource", "arm:GeneralAbility", "arm:XPTrait", "_:b2", "_:b8", "arm:SuperTrait", "armab:craft" ],
+      "arm:addedXP" : 30,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Craft: Fletching",
+      "arm:hasScore" : 3,
+      "arm:hasSpeciality" : null,
+      "arm:hasTotalXP" : 30,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b96",
+      "@type" : [ "armab:craft", "arm:SuperTrait", "owl:Thing", "_:b2", "arm:Trait", "arm:XPTrait", "armab:craft-cooking", "rdfs:Resource", "arm:Ability", "_:b8", "arm:GeneralAbility" ],
+      "arm:addedXP" : 30,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Craft: Cooking",
+      "arm:hasScore" : 3,
+      "arm:hasSpeciality" : null,
+      "arm:hasTotalXP" : 30,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b97",
+      "@type" : [ "armab:infernallore", "_:b2", "arm:ArcaneAbility", "owl:Thing", "rdfs:Resource", "arm:Trait", "_:b8", "arm:Ability", "arm:SuperTrait", "arm:XPTrait" ],
+      "arm:addedXP" : 0,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Infernal Lore",
+      "arm:hasScore" : 0,
+      "arm:hasSpeciality" : "Undead",
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b101",
+      "@type" : [ "armab:organisationlore", "armab:hermeslore", "arm:GeneralAbility", "_:b8", "owl:Thing", "arm:Ability", "arm:SuperTrait", "_:b2", "rdfs:Resource", "arm:Trait", "arm:XPTrait" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Order of Hermes Lore",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Hibernia",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b105",
+      "@type" : [ "arm:ArcaneAbility", "_:b8", "armab:penetration", "arm:Trait", "arm:Ability", "arm:XPTrait", "arm:SuperTrait", "_:b2", "rdfs:Resource", "owl:Thing" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Penetration",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Rego",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b111",
+      "@type" : [ "rdfs:Resource", "arm:Ability", "arm:XPTrait", "arm:SuperTrait", "owl:Thing", "arm:Trait", "_:b8", "_:b2", "arm:SupernaturalAbility", "armab:secondsight" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Second Sight",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Faerie Illusions",
+      "arm:hasTotalXP" : {
+        "@type" : "xsd:int",
+        "@value" : "5"
+      },
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b9",
+      "@type" : [ "_:b2", "arm:XPTrait", "arm:SuperTrait", "arm:Trait", "arm:Ability", "armab:secondsight", "owl:Thing", "arm:SupernaturalAbility", "_:b8", "rdfs:Resource" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Second Sight",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : null,
+      "arm:hasTotalXP" : {
+        "@type" : "xsd:int",
+        "@value" : "5"
+      },
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b11",
+      "@type" : [ "rdfs:Resource", "arm:XPTrait", "arm:Trait", "arm:MartialAbility", "arm:Ability", "owl:Thing", "armab:thrown", "_:b8", "arm:SuperTrait", "_:b2" ],
+      "arm:addedXP" : 5,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Thrown Weapon",
+      "arm:hasScore" : 1,
+      "arm:hasSpeciality" : "Dart",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : 0
+    } ],
+    "arm:hasAdvancement" : [ {
+      "@id" : "_:b29",
+      "@type" : [ "arm:CharacterAdvancement", "_:b0", "rdfs:Resource", "owl:Thing" ],
+      "arm:atSeason" : "Spring",
+      "arm:awardsXP" : 10,
+      "arm:hasAdvancementDescription" : "Jerome's Tower 10xp (Second Sight 5, Parma 5) 3 conf",
+      "arm:hasAdvancementTypeString" : "Adventure",
+      "arm:hasSpentXP" : {
+        "@type" : "xsd:int",
+        "@value" : "11"
+      },
+      "arm:inYear" : 1221
+    }, {
+      "@id" : "_:b40",
+      "@type" : [ "arm:CharacterAdvancement", "owl:Thing", "rdfs:Resource", "_:b0" ],
+      "arm:atSeason" : "Autumn",
+      "arm:awardsXP" : 21,
+      "arm:hasAdvancementDescription" : "Muto L6Q20 - 21xp",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 21,
+      "arm:inYear" : 1220
+    }, {
+      "@id" : "_:b51",
+      "@type" : [ "arm:CharacterAdvancement", "_:b0", "owl:Thing", "rdfs:Resource" ],
+      "arm:atSeason" : "Winter",
+      "arm:awardsXP" : 21,
+      "arm:hasAdvancementDescription" : "Read Aquam root 18+3= 21xp",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 21,
+      "arm:inYear" : 1221
+    }, {
+      "@id" : "_:b62",
+      "@type" : [ "owl:Thing", "rdfs:Resource", "arm:CharacterAdvancement", "arm:ApprenticeshipAdvancement" ],
+      "arm:hasSpentXP" : {
+        "@type" : "xsd:int",
+        "@value" : "300"
+      }
+    }, {
+      "@id" : "_:b106",
+      "@type" : [ "owl:Thing", "rdfs:Resource", "arm:CharacterAdvancement", "arm:EarlyChildhoodAdvancement" ],
+      "arm:hasSpentXP" : {
+        "@type" : "xsd:int",
+        "@value" : "45"
+      }
+    }, {
+      "@id" : "_:b26",
+      "@type" : [ "arm:CharacterAdvancement", "_:b0", "owl:Thing", "rdfs:Resource" ],
+      "arm:atSeason" : "Winter",
+      "arm:awardsXP" : 16,
+      "arm:hasAdvancementDescription" : "Read Intellego Q13+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 16,
+      "arm:inYear" : 1219
+    }, {
+      "@id" : "_:b28",
+      "@type" : [ "_:b0", "arm:CharacterAdvancement", "owl:Thing", "rdfs:Resource" ],
+      "arm:atSeason" : "Winter",
+      "arm:awardsXP" : 18,
+      "arm:hasAdvancementDescription" : "Studies Terram L8 Q15 +3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 18,
+      "arm:inYear" : 1218
+    }, {
+      "@id" : "_:b30",
+      "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "_:b0", "owl:Thing" ],
+      "arm:atSeason" : "Spring",
+      "arm:awardsXP" : 18,
+      "arm:hasAdvancementDescription" : "Read Ignem L8Q15+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 18,
+      "arm:inYear" : 1222
+    }, {
+      "@id" : "_:b33",
+      "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "owl:Thing", "_:b0" ],
+      "arm:atSeason" : "Spring",
+      "arm:awardsXP" : 5,
+      "arm:hasAdvancementDescription" : "Jerome's Tower 5xp Parma",
+      "arm:hasAdvancementTypeString" : "Adventure",
+      "arm:hasSpentXP" : 5,
+      "arm:inYear" : 1220
+    }, {
+      "@id" : "_:b1",
+      "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "_:b0", "owl:Thing" ],
+      "arm:atSeason" : "Winter",
+      "arm:awardsXP" : 16,
+      "arm:hasAdvancementDescription" : "Read Intellego L15Q13+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 16,
+      "arm:inYear" : 1222
+    }, {
+      "@id" : "_:b35",
+      "@type" : [ "arm:CharacterAdvancement", "rdfs:Resource", "_:b0", "owl:Thing" ],
+      "arm:atSeason" : "Spring",
+      "arm:awardsXP" : 13,
+      "arm:hasAdvancementDescription" : "Read Terram Q10+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 13,
+      "arm:inYear" : 1219
+    }, {
+      "@id" : "_:b36",
+      "@type" : [ "_:b0", "rdfs:Resource", "arm:CharacterAdvancement", "owl:Thing" ],
+      "arm:atSeason" : "Autumn",
+      "arm:awardsXP" : 16,
+      "arm:hasAdvancementDescription" : "Read Intellego L15Q13+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 16,
+      "arm:inYear" : 1222
+    }, {
+      "@id" : "_:b39",
+      "@type" : [ "owl:Thing", "_:b0", "arm:CharacterAdvancement", "rdfs:Resource" ],
+      "arm:atSeason" : "Autumn",
+      "arm:awardsXP" : 18,
+      "arm:hasAdvancementDescription" : "Read Latin L5Q15+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 18,
+      "arm:inYear" : 1219
+    }, {
+      "@id" : "_:b50",
+      "@type" : [ "owl:Thing", "arm:CharacterAdvancement", "_:b0", "rdfs:Resource" ],
+      "arm:atSeason" : "Summer",
+      "arm:awardsXP" : 2,
+      "arm:hasAdvancementDescription" : "Story (2conf pts) Lab work: InVi5 Spot the Vis + InVi5 Scales of M W + InVi20 Piercing the faerie veil (from texts) (lab total InVi 14 + Int 3 + MT 4 + Aura 5 + similar spell 4 = 30) + 2xp parma",
+      "arm:hasAdvancementTypeString" : "Exposure",
+      "arm:hasSpentXP" : {
+        "@type" : "xsd:int",
+        "@value" : "17"
+      },
+      "arm:inYear" : 1223
+    }, {
+      "@id" : "_:b56",
+      "@type" : [ "_:b0", "rdfs:Resource", "owl:Thing", "arm:CharacterAdvancement" ],
+      "arm:atSeason" : "Spring",
+      "arm:awardsXP" : 2,
+      "arm:hasAdvancementDescription" : "Lab work: spell from text: Stone Tell of Mind that Sits InTe30  + 2xp parma",
+      "arm:hasAdvancementTypeString" : "Exposure",
+      "arm:hasSpentXP" : {
+        "@type" : "xsd:int",
+        "@value" : "7"
+      },
+      "arm:inYear" : 1223
+    }, {
+      "@id" : "_:b74",
+      "@type" : [ "owl:Thing", "_:b0", "arm:CharacterAdvancement", "rdfs:Resource" ],
+      "arm:atSeason" : "Summer",
+      "arm:awardsXP" : 21,
+      "arm:hasAdvancementDescription" : "Studies Herbam L6 Q21 +3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 21,
+      "arm:inYear" : 1217
+    }, {
+      "@id" : "_:b77",
+      "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "owl:Thing", "_:b0" ],
+      "arm:atSeason" : "Autumn",
+      "arm:awardsXP" : 2,
+      "arm:hasAdvancementDescription" : "Covenant Service 1218 - Enchants Bookstand of Hespera (using 3p He). Earns 3p Terram vis  + 2xp in Parma.",
+      "arm:hasAdvancementTypeString" : "Exposure",
+      "arm:hasSpentXP" : 2,
+      "arm:inYear" : 1218
+    }, {
+      "@id" : "_:b78",
+      "@type" : [ "owl:Thing", "rdfs:Resource", "arm:CharacterAdvancement", "_:b0" ],
+      "arm:atSeason" : "Summer",
+      "arm:awardsXP" : 16,
+      "arm:hasAdvancementDescription" : "Vim L15Q13 - 16xp",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 16,
+      "arm:inYear" : 1220
+    }, {
+      "@id" : "_:b79",
+      "@type" : [ "_:b0", "rdfs:Resource", "owl:Thing", "arm:CharacterAdvancement" ],
+      "arm:atSeason" : "Autumn",
+      "arm:awardsXP" : 16,
+      "arm:hasAdvancementDescription" : "Studies Mentem L16 Q13 +3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 16,
+      "arm:inYear" : 1217
+    }, {
+      "@id" : "_:b80",
+      "@type" : [ "owl:Thing", "rdfs:Resource", "arm:CharacterAdvancement", "_:b0" ],
+      "arm:atSeason" : "Winter",
+      "arm:awardsXP" : 2,
+      "arm:hasAdvancementDescription" : "Lab work: InVi5 Sense the Nature of Vis + InVi20 Piercing the magic veil (from texts) + 2xp parma",
+      "arm:hasAdvancementTypeString" : "Exposure",
+      "arm:hasSpentXP" : {
+        "@type" : "xsd:int",
+        "@value" : "12"
+      },
+      "arm:inYear" : 1223
+    }, {
+      "@id" : "_:b92",
+      "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "owl:Thing", "_:b0" ],
+      "arm:atSeason" : "Summer",
+      "arm:awardsXP" : 8,
+      "arm:hasAdvancementDescription" : "Read Philosophiae (Causes and Curies) half xp due to injuries = 8",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 8,
+      "arm:inYear" : 1221
+    }, {
+      "@id" : "_:b98",
+      "@type" : [ "_:b0", "arm:CharacterAdvancement", "rdfs:Resource", "owl:Thing" ],
+      "arm:atSeason" : "Summer",
+      "arm:awardsXP" : 16,
+      "arm:hasAdvancementDescription" : "Read Rego Q13+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 16,
+      "arm:inYear" : 1219
+    }, {
+      "@id" : "_:b100",
+      "@type" : [ "_:b0", "arm:CharacterAdvancement", "owl:Thing", "rdfs:Resource" ],
+      "arm:atSeason" : "Spring",
+      "arm:awardsXP" : 19,
+      "arm:hasAdvancementDescription" : "Read Corpus Branch L19Q16+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 19,
+      "arm:inYear" : 1224
+    }, {
+      "@id" : "_:b110",
+      "@type" : [ "arm:CharacterAdvancement", "rdfs:Resource", "_:b0", "owl:Thing" ],
+      "arm:atSeason" : "Summer",
+      "arm:awardsXP" : 2,
+      "arm:hasAdvancementDescription" : "Covenant Service 1222. Lab work: ReTe items from text + 2xp parma;  earn 3p vis ",
+      "arm:hasAdvancementTypeString" : "Exposure",
+      "arm:hasSpentXP" : 2,
+      "arm:inYear" : 1222
+    }, {
+      "@id" : "_:b112",
+      "@type" : [ "owl:Thing", "rdfs:Resource", "arm:CharacterAdvancement", "arm:LaterLifeAdvancement" ],
+      "arm:hasSpentXP" : {
+        "@type" : "xsd:int",
+        "@value" : "75"
+      }
+    }, {
+      "@id" : "_:b114",
+      "@type" : [ "rdfs:Resource", "owl:Thing", "_:b0", "arm:CharacterAdvancement" ],
+      "arm:atSeason" : "Spring",
+      "arm:awardsXP" : 14,
+      "arm:hasAdvancementDescription" : "Covenant Service 1217- Cieran's adventure 14xp; 3p Rego, 1p Perdo vis",
+      "arm:hasAdvancementTypeString" : "Adventure",
+      "arm:hasSpentXP" : {
+        "@type" : "xsd:int",
+        "@value" : "14"
+      },
+      "arm:inYear" : 1218
+    }, {
+      "@id" : "_:b115",
+      "@type" : [ "_:b0", "arm:CharacterAdvancement", "rdfs:Resource", "owl:Thing" ],
+      "arm:atSeason" : "Winter",
+      "arm:awardsXP" : 18,
+      "arm:hasAdvancementDescription" : "Read Ignem L8Q15+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 18,
+      "arm:inYear" : 1224
+    }, {
+      "@id" : "_:b5",
+      "@type" : [ "owl:Thing", "arm:CharacterAdvancement", "rdfs:Resource", "_:b0" ],
+      "arm:atSeason" : "Summer",
+      "arm:awardsXP" : 17,
+      "arm:hasAdvancementDescription" : "Studies Servants of the People 14xp+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 17,
+      "arm:inYear" : 1218
+    }, {
+      "@id" : "_:b6",
+      "@type" : [ "_:b0", "owl:Thing", "rdfs:Resource", "arm:CharacterAdvancement" ],
+      "arm:atSeason" : "Autumn",
+      "arm:hasAdvancementDescription" : "Read Animal L15Q14+3",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 17,
+      "arm:inYear" : 1223
+    }, {
+      "@id" : "_:b7",
+      "@type" : [ "arm:CharacterAdvancement", "owl:Thing", "_:b0", "rdfs:Resource" ],
+      "arm:atSeason" : "Winter",
+      "arm:awardsXP" : 2,
+      "arm:hasAdvancementDescription" : "Learn fist of demon's Oblivion + 2xp Latin",
+      "arm:hasAdvancementTypeString" : "Exposure",
+      "arm:hasSpentXP" : {
+        "@type" : "xsd:int",
+        "@value" : "12"
+      },
+      "arm:inYear" : 1220
+    }, {
+      "@id" : "_:b13",
+      "@type" : [ "rdfs:Resource", "owl:Thing", "arm:CharacterAdvancement", "_:b0" ],
+      "arm:atSeason" : "Autumn",
+      "arm:awardsXP" : 21,
+      "arm:hasAdvancementDescription" : "Read Auram 21xp",
+      "arm:hasAdvancementTypeString" : "Reading",
+      "arm:hasSpentXP" : 21,
+      "arm:inYear" : 1221
+    } ],
+    "arm:hasAge" : {
+      "@type" : "xsd:int",
+      "@value" : "25"
+    },
+    "arm:hasAlmaMater" : "Stonehenge",
+    "arm:hasArt" : [ {
+      "@id" : "_:b73",
+      "@type" : [ "rdfs:Resource", "arm:SuperTrait", "arm:Tech", "arm:Art", "_:b2", "armr:intellego", "owl:Thing", "arm:AccelleratedTrait", "arm:Trait" ],
+      "arm:addedXP" : 0,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Intellego",
+      "arm:hasScore" : 0,
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b24",
+      "@type" : [ "arm:Form", "arm:AccelleratedTrait", "rdfs:Resource", "arm:Trait", "_:b2", "arm:Art", "arm:SuperTrait", "armr:herbam", "owl:Thing" ],
+      "arm:addedXP" : 0,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Herbam",
+      "arm:hasScore" : 0,
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b32",
+      "@type" : [ "armr:animal", "arm:Art", "_:b2", "arm:Form", "arm:SuperTrait", "owl:Thing", "arm:AccelleratedTrait", "rdfs:Resource", "arm:Trait" ],
+      "arm:addedXP" : 0,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Animal",
+      "arm:hasScore" : 0,
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b37",
+      "@type" : [ "owl:Thing", "_:b2", "arm:Form", "arm:Art", "arm:SuperTrait", "rdfs:Resource", "armr:mentem", "arm:Trait", "arm:AccelleratedTrait" ],
+      "arm:addedXP" : 1,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Mentem",
+      "arm:hasScore" : 1,
+      "arm:hasTotalXP" : 1,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b45",
+      "@type" : [ "_:b2", "owl:Thing", "arm:Art", "arm:Trait", "armr:imaginem", "arm:AccelleratedTrait", "rdfs:Resource", "arm:SuperTrait", "arm:Form" ],
+      "arm:addedXP" : 53,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Imaginem",
+      "arm:hasScore" : 9,
+      "arm:hasTotalXP" : 53,
+      "arm:hasXP" : 8
+    }, {
+      "@id" : "_:b67",
+      "@type" : [ "arm:AccelleratedTrait", "arm:Trait", "armr:vim", "_:b2", "arm:Art", "arm:Form", "rdfs:Resource", "arm:SuperTrait", "owl:Thing" ],
+      "arm:addedXP" : 3,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Vim",
+      "arm:hasScore" : 2,
+      "arm:hasTotalXP" : 3,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b75",
+      "@type" : [ "arm:SuperTrait", "owl:Thing", "arm:AccelleratedTrait", "arm:Trait", "rdfs:Resource", "_:b2", "armr:perdo", "arm:Art", "arm:Tech" ],
+      "arm:addedXP" : 36,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Perdo",
+      "arm:hasScore" : 8,
+      "arm:hasTotalXP" : 36,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b83",
+      "@type" : [ "arm:Form", "owl:Thing", "arm:Trait", "arm:SuperTrait", "armr:aquam", "rdfs:Resource", "arm:Art", "_:b2", "arm:AccelleratedTrait" ],
+      "arm:addedXP" : 0,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Aquam",
+      "arm:hasScore" : 0,
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b85",
+      "@type" : [ "_:b2", "arm:Art", "owl:Thing", "arm:AccelleratedTrait", "armr:corpus", "arm:Form", "arm:Trait", "rdfs:Resource", "arm:SuperTrait" ],
+      "arm:addedXP" : 15,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Corpus",
+      "arm:hasScore" : 5,
+      "arm:hasTotalXP" : 15,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b87",
+      "@type" : [ "arm:AccelleratedTrait", "arm:SuperTrait", "owl:Thing", "armr:creo", "arm:Art", "arm:Trait", "arm:Tech", "_:b2", "rdfs:Resource" ],
+      "arm:addedXP" : 21,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Creo",
+      "arm:hasScore" : 6,
+      "arm:hasTotalXP" : 21,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b90",
+      "@type" : [ "rdfs:Resource", "arm:AccelleratedTrait", "armr:muto", "arm:SuperTrait", "arm:Trait", "arm:Art", "arm:Tech", "owl:Thing", "_:b2" ],
+      "arm:addedXP" : 0,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Muto",
+      "arm:hasScore" : 0,
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b107",
+      "@type" : [ "arm:Art", "_:b2", "arm:Trait", "rdfs:Resource", "arm:SuperTrait", "arm:Form", "armr:ignem", "arm:AccelleratedTrait", "owl:Thing" ],
+      "arm:addedXP" : 0,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Ignem",
+      "arm:hasScore" : 0,
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b10",
+      "@type" : [ "arm:SuperTrait", "arm:Trait", "arm:AccelleratedTrait", "armr:terram", "arm:Form", "rdfs:Resource", "owl:Thing", "_:b2", "arm:Art" ],
+      "arm:addedXP" : 15,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Terram",
+      "arm:hasScore" : 5,
+      "arm:hasTotalXP" : 15,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b12",
+      "@type" : [ "_:b2", "arm:SuperTrait", "arm:AccelleratedTrait", "arm:Art", "arm:Tech", "rdfs:Resource", "armr:rego", "arm:Trait", "owl:Thing" ],
+      "arm:addedXP" : 36,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Rego",
+      "arm:hasScore" : 8,
+      "arm:hasTotalXP" : 36,
+      "arm:hasXP" : 0
+    }, {
+      "@id" : "_:b14",
+      "@type" : [ "owl:Thing", "arm:AccelleratedTrait", "armr:auram", "arm:Art", "_:b2", "rdfs:Resource", "arm:Form", "arm:Trait", "arm:SuperTrait" ],
+      "arm:addedXP" : 0,
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Auram",
+      "arm:hasScore" : 0,
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : 0
+    } ],
+    "arm:hasBirthYear" : 1192,
+    "arm:hasCharacteristic" : [ {
+      "@id" : "_:b95",
+      "@type" : [ "armr:per", "arm:Characteristic", "owl:Thing", "_:b8", "arm:SuperTrait", "arm:Trait", "_:b2", "rdfs:Resource" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Perception",
+      "arm:hasOrder" : 2,
+      "arm:hasScore" : -1,
+      "arm:hasSpeciality" : null
+    }, {
+      "@id" : "_:b52",
+      "@type" : [ "owl:Thing", "armr:int", "arm:SuperTrait", "rdfs:Resource", "_:b8", "_:b2", "arm:Trait", "arm:Characteristic" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Intelligence",
+      "arm:hasOrder" : 1,
+      "arm:hasScore" : 3,
+      "arm:hasSpeciality" : null
+    }, {
+      "@id" : "_:b76",
+      "@type" : [ "arm:SuperTrait", "owl:Thing", "_:b8", "arm:Trait", "armr:qik", "arm:Characteristic", "rdfs:Resource", "_:b2" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Quickness",
+      "arm:hasOrder" : 8,
+      "arm:hasScore" : -3,
+      "arm:hasSpeciality" : null
+    }, {
+      "@id" : "_:b89",
+      "@type" : [ "arm:Characteristic", "rdfs:Resource", "armr:pre", "_:b8", "_:b2", "owl:Thing", "arm:SuperTrait", "arm:Trait" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Presence",
+      "arm:hasOrder" : 4,
+      "arm:hasScore" : 0,
+      "arm:hasSpeciality" : null
+    }, {
+      "@id" : "_:b102",
+      "@type" : [ "arm:Characteristic", "arm:SuperTrait", "_:b8", "_:b2", "arm:Trait", "rdfs:Resource", "armr:com", "owl:Thing" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Communication",
+      "arm:hasOrder" : 3,
+      "arm:hasScore" : -1,
+      "arm:hasSpeciality" : null
+    }, {
+      "@id" : "_:b103",
+      "@type" : [ "arm:SuperTrait", "_:b8", "arm:Characteristic", "owl:Thing", "armr:dex", "arm:Trait", "_:b2", "rdfs:Resource" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Dexterity",
+      "arm:hasOrder" : 7,
+      "arm:hasScore" : 2,
+      "arm:hasSpeciality" : null
+    }, {
+      "@id" : "_:b109",
+      "@type" : [ "armr:sta", "owl:Thing", "arm:Characteristic", "arm:Trait", "_:b8", "arm:SuperTrait", "rdfs:Resource", "_:b2" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Stamina",
+      "arm:hasOrder" : 6,
+      "arm:hasScore" : 3,
+      "arm:hasSpeciality" : null
+    }, {
+      "@id" : "_:b116",
+      "@type" : [ "arm:SuperTrait", "armr:str", "arm:Trait", "_:b8", "_:b2", "owl:Thing", "arm:Characteristic", "rdfs:Resource" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Strenghth",
+      "arm:hasOrder" : 5,
+      "arm:hasScore" : 2,
+      "arm:hasSpeciality" : null
+    } ],
+    "arm:hasCovenantName" : null,
+    "arm:hasEquipment" : {
+      "@id" : "_:b66",
+      "@type" : [ "arm:Possession", "rdfs:Resource", "arm:Equipment", "owl:Thing", "arm:SuperPossession" ],
+      "arm:hasPossessionDescription" : "The cookies are charged items.",
+      "arm:hasPossessionLabel" : "Assorted magical cookies",
+      "arm:hasPrice" : null,
+      "arm:hasQuantity" : null
+    },
+    "arm:hasFlaw" : [ {
+      "@id" : "_:b27",
+      "@type" : [ "owl:Thing", "_:b3", "arm:Trait", "arm:SuperTrait", "arm:Flaw", "rdfs:Resource", "armr:majorFlaw", "_:b2", "armr:shortRangedMagic", "armr:majorHermeticFlaw" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Short-Ranged Magic",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "-3"
+      }
+    }, {
+      "@id" : "_:b42",
+      "@type" : [ "rdfs:Resource", "arm:Flaw", "armr:majorFlaw", "owl:Thing", "_:b2", "armr:weakSpontaneousMagic", "arm:Trait", "_:b3", "armr:majorHermeticFlaw", "arm:SuperTrait" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Weak Spontaneous Magic",
+      "arm:hasScore" : 0
+    }, {
+      "@id" : "_:b48",
+      "@type" : [ "armr:majorPersonalityFlaw", "armr:majorFlaw", "owl:Thing", "rdfs:Resource", "_:b3", "armr:meddler", "arm:Flaw", "_:b2", "arm:SuperTrait", "arm:Trait" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Meddler",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "-3"
+      }
+    }, {
+      "@id" : "_:b49",
+      "@type" : [ "armr:minorPersonalityFlaw", "armr:minorFlaw", "owl:Thing", "rdfs:Resource", "_:b2", "_:b3", "arm:Flaw", "arm:Trait", "armr:carefree", "arm:SuperTrait" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Carefree",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "-1"
+      }
+    }, {
+      "@id" : "_:b70",
+      "@type" : [ "armr:majorFlaw", "_:b2", "_:b3", "arm:Trait", "rdfs:Resource", "armr:mistakenIdentity", "arm:SuperTrait", "owl:Thing", "arm:Flaw", "armr:majorStoryFlaw" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Mistaken Identity",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "-3"
+      }
+    } ],
+    "arm:hasGender" : "Male",
+    "arm:hasName" : "Cieran the Fletcher",
+    "arm:hasNationality" : "Irish",
+    "arm:hasNextCharacterSheet" : null,
+    "arm:hasOtherTrait" : [ {
+      "@id" : "_:b22",
+      "@type" : [ "owl:Thing", "arm:SuperTrait", "rdfs:Resource", "_:b2", "arm:OtherTrait", "arm:Trait", "arm:Decrepitude" ],
+      "arm:hasDescription" : null,
+      "arm:hasEffect" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : null,
+      "arm:hasScore" : null,
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b34",
+      "@type" : [ "arm:Confidence", "_:b2", "arm:SuperTrait", "owl:Thing", "arm:Trait", "arm:OtherTrait", "rdfs:Resource" ],
+      "arm:hasDescription" : null,
+      "arm:hasEffect" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : null,
+      "arm:hasPoints" : 8,
+      "arm:hasScore" : 1,
+      "arm:hasXP" : 8
+    }, {
+      "@id" : "_:b82",
+      "@type" : [ "arm:SuperTrait", "_:b2", "rdfs:Resource", "arm:OtherTrait", "arm:Trait", "owl:Thing", "arm:Size" ],
+      "arm:hasDescription" : null,
+      "arm:hasEffect" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : null,
+      "arm:hasScore" : 0,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b18",
+      "@type" : [ "arm:SuperTrait", "_:b2", "rdfs:Resource", "arm:OtherTrait", "arm:Trait", "owl:Thing", "arm:Warping" ],
+      "arm:hasDescription" : null,
+      "arm:hasEffect" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : null,
+      "arm:hasScore" : null,
+      "arm:hasTotalXP" : 0,
+      "arm:hasXP" : null
+    } ],
+    "arm:hasPersonalityTrait" : [ {
+      "@id" : "_:b84",
+      "@type" : [ "armr:personality-carefree", "arm:PersonalityTrait", "arm:Trait", "owl:Thing", "_:b2", "rdfs:Resource", "arm:SuperTrait" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Carefree",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "+3"
+      }
+    }, {
+      "@id" : "_:b21",
+      "@type" : [ "armr:personality-meddler", "arm:PersonalityTrait", "arm:Trait", "owl:Thing", "_:b2", "rdfs:Resource", "arm:SuperTrait" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Meddler",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "+6"
+      }
+    }, {
+      "@id" : "_:b43",
+      "@type" : [ "_:b2", "arm:SuperTrait", "owl:Thing", "rdfs:Resource", "arm:Trait", "arm:PersonalityTrait", "armr:personality-villager" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Villager",
+      "arm:hasScore" : 1
+    }, {
+      "@id" : "_:b91",
+      "@type" : [ "_:b2", "arm:SuperTrait", "owl:Thing", "rdfs:Resource", "arm:Trait", "arm:PersonalityTrait", "armr:personality-meticulous" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Meticulous",
+      "arm:hasScore" : 3
+    } ],
+    "arm:hasPlayer" : "George",
+    "arm:hasPrevCharacterSheet" : null,
+    "arm:hasProfession" : "Rusticus (magus ex Miscellanea)",
+    "arm:hasReputation" : null,
+    "arm:hasSG" : "George",
+    "arm:hasSaga" : {
+      "@id" : "armchar:contestedlands",
+      "@type" : [ "owl:Thing", "_:b118", "rdfs:Resource", "_:b117", "arm:Saga" ],
+      "arm:hasCovenantName" : "Elk's Run",
+      "arm:hasSG" : "George",
+      "arm:hasTitle" : "Contested Lands"
+    },
+    "arm:hasSagaTitle" : "Contested Lands",
+    "arm:hasSize" : 0,
+    "arm:hasSpell" : [ {
+      "@id" : "_:b4",
+      "@type" : [ "arm:SuperTrait", "_:b2", "armr:PeIm20Veil", "arm:Trait", "rdfs:Resource", "arm:Spell", "_:b3", "owl:Thing" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Sun",
+      "arm:hasFormString" : "Imaginem",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Veil of Invisibility",
+      "arm:hasLevel" : 20,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Individual",
+      "arm:hasTechniqueString" : "Perdo",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b23",
+      "@type" : [ "_:b2", "arm:Spell", "rdfs:Resource", "armr:PeTe20End", "_:b3", "arm:Trait", "arm:SuperTrait", "owl:Thing" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Momentary",
+      "arm:hasFormString" : "Terram",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "End of the Mighty Castle",
+      "arm:hasLevel" : 20,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Structure",
+      "arm:hasTechniqueString" : "Perdo",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b57",
+      "@type" : [ "arm:SuperTrait", "owl:Thing", "_:b3", "armr:PeMe10Trust", "rdfs:Resource", "_:b2", "arm:Trait", "arm:Spell" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Diameter",
+      "arm:hasFormString" : "Mentem",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Trust of the Childlike Faith",
+      "arm:hasLevel" : 10,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Individual",
+      "arm:hasTechniqueString" : "Perdo",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b59",
+      "@type" : [ "arm:Spell", "armr:CrIg15Lamp", "_:b3", "owl:Thing", "arm:SuperTrait", "_:b2", "rdfs:Resource", "arm:Trait" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Sun",
+      "arm:hasFormString" : "Ignem",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Lamp till Morning without Flame",
+      "arm:hasLevel" : 15,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Individual",
+      "arm:hasTechniqueString" : "Creo",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b60",
+      "@type" : [ "arm:SuperTrait", "armr:MuIm10Aura", "_:b3", "arm:Trait", "rdfs:Resource", "_:b2", "owl:Thing", "arm:Spell" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Sun",
+      "arm:hasFormString" : "Imaginem",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Aura of Ennobled Presence",
+      "arm:hasLevel" : 10,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Individual",
+      "arm:hasTechniqueString" : "Muto",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b63",
+      "@type" : [ "rdfs:Resource", "arm:Trait", "_:b2", "owl:Thing", "arm:Spell", "_:b3", "arm:SuperTrait", "armr:ReMe15Arrow" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Momentary",
+      "arm:hasFormString" : "Mentem",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Arrow of Peaceful Slumber",
+      "arm:hasLevel" : 15,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Group",
+      "arm:hasTechniqueString" : "Rego",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b69",
+      "@type" : [ "rdfs:Resource", "arm:Trait", "arm:Spell", "armr:PeCo20Wound", "arm:SuperTrait", "_:b2", "_:b3", "owl:Thing" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Momentary",
+      "arm:hasFormString" : "Corpus",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Wound without Cause",
+      "arm:hasLevel" : 20,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Individual",
+      "arm:hasTechniqueString" : "Perdo",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b71",
+      "@type" : [ "rdfs:Resource", "arm:SuperTrait", "arm:Trait", "owl:Thing", "arm:Spell", "_:b2", "armr:CrIm10Clarity", "_:b3" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Sun",
+      "arm:hasFormString" : "Imaginem",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Clarity of Public Speech",
+      "arm:hasLevel" : 10,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Room",
+      "arm:hasTechniqueString" : "Creo",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b113",
+      "@type" : [ "arm:Spell", "owl:Thing", "arm:SuperTrait", "rdfs:Resource", "arm:Trait", "armr:ReMe5Touch", "_:b2", "_:b3" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Momentary",
+      "arm:hasFormString" : "Mentem",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Touch of Slumber",
+      "arm:hasLevel" : 5,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Individual",
+      "arm:hasTechniqueString" : "Rego",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b19",
+      "@type" : [ "owl:Thing", "_:b2", "arm:SuperTrait", "_:b3", "rdfs:Resource", "arm:Spell", "arm:Trait", "armr:PeTe20Obliteration" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Momentary",
+      "arm:hasFormString" : "Terram",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Obliteration of the Metallic Barrier",
+      "arm:hasLevel" : 20,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Individual",
+      "arm:hasTechniqueString" : "Perdo",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    }, {
+      "@id" : "_:b20",
+      "@type" : [ "_:b3", "armr:ReCo5Spasms", "owl:Thing", "arm:Trait", "arm:Spell", "rdfs:Resource", "_:b2", "arm:SuperTrait" ],
+      "arm:addedXP" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      },
+      "arm:hasDescription" : null,
+      "arm:hasDurationString" : "Sun",
+      "arm:hasFormString" : "Corpus",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Spasms of the Uncontrolled Body",
+      "arm:hasLevel" : 5,
+      "arm:hasRangeString" : "Touch",
+      "arm:hasScore" : null,
+      "arm:hasTargetString" : "Individual",
+      "arm:hasTechniqueString" : "Rego",
+      "arm:hasTotalXP" : 5,
+      "arm:hasXP" : null
+    } ],
+    "arm:hasVirtue" : [ {
+      "@id" : "_:b53",
+      "@type" : [ "rdfs:Resource", "owl:Thing", "arm:Trait", "armr:minorVirtue", "_:b3", "arm:SuperTrait", "armr:minorGeneralVirtue", "armr:bookLearner", "_:b2", "arm:Virtue" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Book Learner",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "+1"
+      }
+    }, {
+      "@id" : "_:b54",
+      "@type" : [ "owl:Thing", "_:b3", "armr:majorVirtue", "arm:Trait", "_:b2", "armr:flawlessMagic", "arm:SuperTrait", "armr:majorHermeticVirtue", "rdfs:Resource", "arm:Virtue" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Flawless Magic",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "+3"
+      }
+    }, {
+      "@id" : "_:b58",
+      "@type" : [ "rdfs:Resource", "armr:affinityWithArt", "_:b3", "arm:SuperTrait", "owl:Thing", "armr:minorVirtue", "arm:Trait", "arm:Virtue", "_:b2", "armr:minorHermeticVirtue" ],
+      "arm:hasDescription" : null,
+      "arm:hasDetail" : "Imaginem",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Affinity with Art",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "+1"
+      }
+    }, {
+      "@id" : "_:b88",
+      "@type" : [ "arm:Trait", "armr:majorVirtue", "rdfs:Resource", "_:b3", "armr:majorSupernaturalVirtue", "_:b2", "armr:craftmagic", "owl:Thing", "arm:SuperTrait", "arm:Virtue" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Craft Magic",
+      "arm:hasScore" : 0
+    }, {
+      "@id" : "_:b93",
+      "@type" : [ "armr:majorSupernaturalVirtue", "arm:Trait", "rdfs:Resource", "_:b3", "arm:Virtue", "armr:strongFaerieBlood", "owl:Thing", "_:b2", "arm:SuperTrait", "armr:majorVirtue" ],
+      "arm:hasDescription" : null,
+      "arm:hasDetail" : "Ettin Blood, +1 to Stamina",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Strong Faerie Blood",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "+3"
+      }
+    }, {
+      "@id" : "_:b94",
+      "@type" : [ "armr:minorVirtue", "owl:Thing", "arm:SuperTrait", "armr:spellfoci", "rdfs:Resource", "_:b2", "arm:Virtue", "armr:minorHermeticVirtue", "arm:Trait", "_:b3" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Spell Foci",
+      "arm:hasScore" : 0
+    }, {
+      "@id" : "_:b99",
+      "@type" : [ "_:b3", "_:b2", "rdfs:Resource", "owl:Thing", "arm:Virtue", "armr:skilledParens", "arm:Trait", "armr:minorVirtue", "armr:minorHermeticVirtue", "arm:SuperTrait" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Skilled Parens",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "+1"
+      }
+    }, {
+      "@id" : "_:b104",
+      "@type" : [ "armr:minorSupernaturalVirtue", "arm:Virtue", "arm:SuperTrait", "arm:Trait", "armr:minorVirtue", "armr:secondSight", "_:b3", "_:b2", "owl:Thing", "rdfs:Resource" ],
+      "arm:hasDescription" : null,
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Second Sight",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "0"
+      }
+    }, {
+      "@id" : "_:b17",
+      "@type" : [ "arm:Virtue", "owl:Thing", "armr:minorVirtue", "rdfs:Resource", "arm:Trait", "armr:minorMagicalFocus", "_:b2", "arm:SuperTrait", "_:b3", "armr:minorHermeticVirtue" ],
+      "arm:hasDescription" : null,
+      "arm:hasDetail" : "Magical Arrows",
+      "arm:hasGeneralDescription" : null,
+      "arm:hasLabel" : "Minor Magical Focus",
+      "arm:hasScore" : {
+        "@type" : "xsd:int",
+        "@value" : "+1"
+      }
+    } ],
+    "arm:hasVis" : [ {
+      "@id" : "_:b68",
+      "@type" : [ "arm:Possession", "rdfs:Resource", "arm:StockItem", "arm:Vis", "owl:Thing", "arm:SuperPossession" ],
+      "arm:hasPossessionDescription" : "Marbles",
+      "arm:hasPossessionLabel" : "Rego",
+      "arm:hasQuantity" : 4
+    }, {
+      "@id" : "_:b15",
+      "@type" : [ "arm:Possession", "arm:SuperPossession", "rdfs:Resource", "arm:StockItem", "arm:Vis", "owl:Thing" ],
+      "arm:hasPossessionLabel" : "Perdo",
+      "arm:hasQuantity" : 1
+    } ],
+    "arm:hasWeapon" : [ {
+      "@id" : "_:b72",
+      "@type" : [ "arm:MeleeeWeapon", "rdfs:Resource", "arm:Possession", "arm:StockItem", "arm:SuperWeapon", "armr:Dagger", "arm:SuperPossession", "arm:Weapon", "owl:Thing" ],
+      "arm:hasPossessionLabel" : "Dagger",
+      "arm:hasQuantity" : 1
+    }, {
+      "@id" : "_:b108",
+      "@type" : [ "arm:MissileWeapon", "rdfs:Resource", "arm:SuperWeapon", "arm:StockItem", "arm:Weapon", "armr:Longbow", "arm:Possession", "owl:Thing", "arm:SuperPossession" ],
+      "arm:hasPossessionLabel" : "Longbow",
+      "arm:hasQuantity" : 1
+    } ],
+    "arm:inYear" : 1217,
+    "arm:isCharacter" : {
+      "@id" : "armchar:cieran",
+      "@type" : [ "arm:GeneralCharacter", "arm:Character", "_:b117", "arm:BaseCharacter", "rdfs:Resource", "_:b118", "arm:Magus", "owl:Thing" ],
+      "arm:hasAlmaMater" : "Stonehenge",
+      "arm:hasBirthYear" : 1192,
+      "arm:hasGender" : "Male",
+      "arm:hasName" : "Cieran the Fletcher",
+      "arm:hasNationality" : "Irish",
+      "arm:hasPlayer" : "George",
+      "arm:hasProfession" : "Rusticus (magus ex Miscellanea)",
+      "arm:hasSG" : "George",
+      "arm:hasSagaTitle" : "Contested Lands",
+      "arm:hasSize" : 0
+    }
+  } ]
+}

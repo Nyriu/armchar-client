@@ -1,0 +1,736 @@
+{
+  "@context" : {
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "arm" : "https://hg.schaathun.net/armchar/schema#",
+    "armr" : "https://hg.schaathun.net/armchar/resources#",
+    "armab" : "https://hg.schaathun.net/armchar/resources/abilities#",
+    "armchar" : "https://hg.schaathun.net/armchar/character/"
+  },
+  "@graph" : [ {
+    "@id" : "armchar:cieran",
+    "@type" : [ "arm:BaseCharacter", "arm:GeneralCharacter", "_:b98", "rdfs:Resource", "arm:Character", "_:b99", "owl:Thing", "arm:Magus" ],
+    "arm:hasAdvancementList" : {
+      "@list" : [ {
+        "@id" : "_:b89",
+        "@type" : [ "owl:Thing", "_:b0", "arm:CharacterAdvancement", "rdfs:Resource" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#autumn1217"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b90"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b91"
+        },
+        "arm:atSeason" : "Summer",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:summer1217"
+        },
+        "arm:awardsXP" : 21,
+        "arm:hasAdvancementDescription" : "Studies Herbam L6 Q21 +3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 21,
+        "arm:inYear" : 1217
+      }, {
+        "@id" : "_:b18",
+        "@type" : [ "_:b0", "owl:Thing", "rdfs:Resource", "arm:CharacterAdvancement" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#winter1218"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b19"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b20"
+        },
+        "arm:atSeason" : "Autumn",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:autumn1217"
+        },
+        "arm:awardsXP" : 16,
+        "arm:hasAdvancementDescription" : "Studies Mentem L16 Q13 +3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 16,
+        "arm:inYear" : 1217
+      }, {
+        "@id" : "_:b21",
+        "@type" : [ "_:b0", "arm:CharacterAdvancement", "owl:Thing", "rdfs:Resource" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#spring1218"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b22"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b23"
+        },
+        "arm:atSeason" : "Winter",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:winter1218"
+        },
+        "arm:awardsXP" : 18,
+        "arm:hasAdvancementDescription" : "Studies Terram L8 Q15 +3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 18,
+        "arm:inYear" : 1218
+      }, {
+        "@id" : "_:b7",
+        "@type" : [ "rdfs:Resource", "owl:Thing", "_:b0", "arm:CharacterAdvancement" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#summer1218"
+        },
+        "arm:advanceTrait" : [ {
+          "@id" : "_:b8"
+        }, {
+          "@id" : "_:b9"
+        }, {
+          "@id" : "_:b10"
+        } ],
+        "arm:advanceTraitList" : {
+          "@id" : "_:b11"
+        },
+        "arm:atSeason" : "Spring",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:spring1218"
+        },
+        "arm:awardsXP" : 14,
+        "arm:hasAdvancementDescription" : "Covenant Service 1217- Cieran's adventure 14xp; 3p Rego, 1p Perdo vis",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Adventure"
+        },
+        "arm:hasAdvancementTypeString" : "Adventure",
+        "arm:hasSpentXP" : {
+          "@type" : "xsd:int",
+          "@value" : "14"
+        },
+        "arm:inYear" : 1218
+      }, {
+        "@id" : "_:b92",
+        "@type" : [ "owl:Thing", "arm:CharacterAdvancement", "rdfs:Resource", "_:b0" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#autumn1218"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b93"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b94"
+        },
+        "arm:atSeason" : "Summer",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:summer1218"
+        },
+        "arm:awardsXP" : 17,
+        "arm:hasAdvancementDescription" : "Studies Servants of the People 14xp+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 17,
+        "arm:inYear" : 1218
+      }, {
+        "@id" : "_:b45",
+        "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "owl:Thing", "_:b0" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#winter1219"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b46"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b47"
+        },
+        "arm:atSeason" : "Autumn",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:autumn1218"
+        },
+        "arm:awardsXP" : 2,
+        "arm:hasAdvancementDescription" : "Covenant Service 1218 - Enchants Bookstand of Hespera (using 3p He). Earns 3p Terram vis  + 2xp in Parma.",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Exposure"
+        },
+        "arm:hasAdvancementTypeString" : "Exposure",
+        "arm:hasSpentXP" : 2,
+        "arm:inYear" : 1218
+      }, {
+        "@id" : "_:b65",
+        "@type" : [ "arm:CharacterAdvancement", "_:b0", "owl:Thing", "rdfs:Resource" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#spring1219"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b66"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b67"
+        },
+        "arm:atSeason" : "Winter",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:winter1219"
+        },
+        "arm:awardsXP" : 16,
+        "arm:hasAdvancementDescription" : "Read Intellego Q13+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 16,
+        "arm:inYear" : 1219
+      }, {
+        "@id" : "_:b95",
+        "@type" : [ "arm:CharacterAdvancement", "rdfs:Resource", "_:b0", "owl:Thing" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#summer1219"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b96"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b97"
+        },
+        "arm:atSeason" : "Spring",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:spring1219"
+        },
+        "arm:awardsXP" : 13,
+        "arm:hasAdvancementDescription" : "Read Terram Q10+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 13,
+        "arm:inYear" : 1219
+      }, {
+        "@id" : "_:b27",
+        "@type" : [ "_:b0", "arm:CharacterAdvancement", "rdfs:Resource", "owl:Thing" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#autumn1219"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b28"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b29"
+        },
+        "arm:atSeason" : "Summer",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:summer1219"
+        },
+        "arm:awardsXP" : 16,
+        "arm:hasAdvancementDescription" : "Read Rego Q13+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 16,
+        "arm:inYear" : 1219
+      }, {
+        "@id" : "_:b12",
+        "@type" : [ "owl:Thing", "_:b0", "arm:CharacterAdvancement", "rdfs:Resource" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#winter1220"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b13"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b14"
+        },
+        "arm:atSeason" : "Autumn",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:autumn1219"
+        },
+        "arm:awardsXP" : 18,
+        "arm:hasAdvancementDescription" : "Read Latin L5Q15+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 18,
+        "arm:inYear" : 1219
+      }, {
+        "@id" : "_:b60",
+        "@type" : [ "arm:CharacterAdvancement", "owl:Thing", "_:b0", "rdfs:Resource" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#spring1220"
+        },
+        "arm:advanceTrait" : [ {
+          "@id" : "_:b61"
+        }, {
+          "@id" : "_:b62"
+        }, {
+          "@id" : "_:b63"
+        } ],
+        "arm:advanceTraitList" : {
+          "@id" : "_:b64"
+        },
+        "arm:atSeason" : "Winter",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:winter1220"
+        },
+        "arm:awardsXP" : 2,
+        "arm:hasAdvancementDescription" : "Learn fist of demon's Oblivion + 2xp Latin",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Exposure"
+        },
+        "arm:hasAdvancementTypeString" : "Exposure",
+        "arm:hasSpentXP" : {
+          "@type" : "xsd:int",
+          "@value" : "12"
+        },
+        "arm:inYear" : 1220
+      }, {
+        "@id" : "_:b48",
+        "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "owl:Thing", "_:b0" ],
+        "arm:acquiredPossession" : {
+          "@id" : "_:b49"
+        },
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#summer1220"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b50"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b51"
+        },
+        "arm:atSeason" : "Spring",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:spring1220"
+        },
+        "arm:awardsXP" : 5,
+        "arm:hasAdvancementDescription" : "Jerome's Tower 5xp Parma",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Adventure"
+        },
+        "arm:hasAdvancementTypeString" : "Adventure",
+        "arm:hasSpentXP" : 5,
+        "arm:inYear" : 1220
+      }, {
+        "@id" : "_:b4",
+        "@type" : [ "owl:Thing", "rdfs:Resource", "arm:CharacterAdvancement", "_:b0" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#autumn1220"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b5"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b6"
+        },
+        "arm:atSeason" : "Summer",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:summer1220"
+        },
+        "arm:awardsXP" : 16,
+        "arm:hasAdvancementDescription" : "Vim L15Q13 - 16xp",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 16,
+        "arm:inYear" : 1220
+      }, {
+        "@id" : "_:b30",
+        "@type" : [ "arm:CharacterAdvancement", "owl:Thing", "rdfs:Resource", "_:b0" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#winter1221"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b31"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b32"
+        },
+        "arm:atSeason" : "Autumn",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:autumn1220"
+        },
+        "arm:awardsXP" : 21,
+        "arm:hasAdvancementDescription" : "Muto L6Q20 - 21xp",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 21,
+        "arm:inYear" : 1220
+      }, {
+        "@id" : "_:b72",
+        "@type" : [ "arm:CharacterAdvancement", "_:b0", "owl:Thing", "rdfs:Resource" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#spring1221"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b73"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b74"
+        },
+        "arm:atSeason" : "Winter",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:winter1221"
+        },
+        "arm:awardsXP" : 21,
+        "arm:hasAdvancementDescription" : "Read Aquam root 18+3= 21xp",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 21,
+        "arm:inYear" : 1221
+      }, {
+        "@id" : "_:b78",
+        "@type" : [ "arm:CharacterAdvancement", "_:b0", "rdfs:Resource", "owl:Thing" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#summer1221"
+        },
+        "arm:advanceTrait" : [ {
+          "@id" : "_:b79"
+        }, {
+          "@id" : "_:b80"
+        }, {
+          "@id" : "_:b81"
+        } ],
+        "arm:advanceTraitList" : {
+          "@id" : "_:b82"
+        },
+        "arm:atSeason" : "Spring",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:spring1221"
+        },
+        "arm:awardsXP" : 10,
+        "arm:hasAdvancementDescription" : "Jerome's Tower 10xp (Second Sight 5, Parma 5) 3 conf",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Adventure"
+        },
+        "arm:hasAdvancementTypeString" : "Adventure",
+        "arm:hasSpentXP" : {
+          "@type" : "xsd:int",
+          "@value" : "11"
+        },
+        "arm:inYear" : 1221
+      }, {
+        "@id" : "_:b86",
+        "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "owl:Thing", "_:b0" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#autumn1221"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b87"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b88"
+        },
+        "arm:atSeason" : "Summer",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:summer1221"
+        },
+        "arm:awardsXP" : 8,
+        "arm:hasAdvancementDescription" : "Read Philosophiae (Causes and Curies) half xp due to injuries = 8",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 8,
+        "arm:inYear" : 1221
+      }, {
+        "@id" : "_:b83",
+        "@type" : [ "rdfs:Resource", "owl:Thing", "arm:CharacterAdvancement", "_:b0" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#winter1222"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b84"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b85"
+        },
+        "arm:atSeason" : "Autumn",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:autumn1221"
+        },
+        "arm:awardsXP" : 21,
+        "arm:hasAdvancementDescription" : "Read Auram 21xp",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 21,
+        "arm:inYear" : 1221
+      }, {
+        "@id" : "_:b1",
+        "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "_:b0", "owl:Thing" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#spring1222"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b2"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b3"
+        },
+        "arm:atSeason" : "Winter",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:winter1222"
+        },
+        "arm:awardsXP" : 16,
+        "arm:hasAdvancementDescription" : "Read Intellego L15Q13+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 16,
+        "arm:inYear" : 1222
+      }, {
+        "@id" : "_:b42",
+        "@type" : [ "rdfs:Resource", "arm:CharacterAdvancement", "_:b0", "owl:Thing" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#summer1222"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b43"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b44"
+        },
+        "arm:atSeason" : "Spring",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:spring1222"
+        },
+        "arm:awardsXP" : 18,
+        "arm:hasAdvancementDescription" : "Read Ignem L8Q15+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 18,
+        "arm:inYear" : 1222
+      }, {
+        "@id" : "_:b15",
+        "@type" : [ "arm:CharacterAdvancement", "rdfs:Resource", "_:b0", "owl:Thing" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#autumn1222"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b16"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b17"
+        },
+        "arm:atSeason" : "Summer",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:summer1222"
+        },
+        "arm:awardsXP" : 2,
+        "arm:hasAdvancementDescription" : "Covenant Service 1222. Lab work: ReTe items from text + 2xp parma;  earn 3p vis ",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Exposure"
+        },
+        "arm:hasAdvancementTypeString" : "Exposure",
+        "arm:hasSpentXP" : 2,
+        "arm:inYear" : 1222
+      }, {
+        "@id" : "_:b75",
+        "@type" : [ "_:b0", "rdfs:Resource", "arm:CharacterAdvancement", "owl:Thing" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#winter1223"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b76"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b77"
+        },
+        "arm:atSeason" : "Autumn",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:autumn1222"
+        },
+        "arm:awardsXP" : 16,
+        "arm:hasAdvancementDescription" : "Read Intellego L15Q13+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 16,
+        "arm:inYear" : 1222
+      }, {
+        "@id" : "_:b55",
+        "@type" : [ "owl:Thing", "rdfs:Resource", "arm:CharacterAdvancement", "_:b0" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#spring1223"
+        },
+        "arm:advanceTrait" : [ {
+          "@id" : "_:b56"
+        }, {
+          "@id" : "_:b57"
+        }, {
+          "@id" : "_:b58"
+        } ],
+        "arm:advanceTraitList" : {
+          "@id" : "_:b59"
+        },
+        "arm:atSeason" : "Winter",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:winter1223"
+        },
+        "arm:awardsXP" : 2,
+        "arm:hasAdvancementDescription" : "Lab work: InVi5 Sense the Nature of Vis + InVi20 Piercing the magic veil (from texts) + 2xp parma",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Exposure"
+        },
+        "arm:hasAdvancementTypeString" : "Exposure",
+        "arm:hasSpentXP" : {
+          "@type" : "xsd:int",
+          "@value" : "12"
+        },
+        "arm:inYear" : 1223
+      }, {
+        "@id" : "_:b68",
+        "@type" : [ "_:b0", "rdfs:Resource", "owl:Thing", "arm:CharacterAdvancement" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#summer1223"
+        },
+        "arm:advanceTrait" : [ {
+          "@id" : "_:b69"
+        }, {
+          "@id" : "_:b70"
+        } ],
+        "arm:advanceTraitList" : {
+          "@id" : "_:b71"
+        },
+        "arm:atSeason" : "Spring",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:spring1223"
+        },
+        "arm:awardsXP" : 2,
+        "arm:hasAdvancementDescription" : "Lab work: spell from text: Stone Tell of Mind that Sits InTe30  + 2xp parma",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Exposure"
+        },
+        "arm:hasAdvancementTypeString" : "Exposure",
+        "arm:hasSpentXP" : {
+          "@type" : "xsd:int",
+          "@value" : "7"
+        },
+        "arm:inYear" : 1223
+      }, {
+        "@id" : "_:b36",
+        "@type" : [ "owl:Thing", "arm:CharacterAdvancement", "_:b0", "rdfs:Resource" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#autumn1223"
+        },
+        "arm:advanceTrait" : [ {
+          "@id" : "_:b37"
+        }, {
+          "@id" : "_:b38"
+        }, {
+          "@id" : "_:b39"
+        }, {
+          "@id" : "_:b40"
+        } ],
+        "arm:advanceTraitList" : {
+          "@id" : "_:b41"
+        },
+        "arm:atSeason" : "Summer",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:summer1223"
+        },
+        "arm:awardsXP" : 2,
+        "arm:hasAdvancementDescription" : "Story (2conf pts) Lab work: InVi5 Spot the Vis + InVi5 Scales of M W + InVi20 Piercing the faerie veil (from texts) (lab total InVi 14 + Int 3 + MT 4 + Aura 5 + similar spell 4 = 30) + 2xp parma",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Exposure"
+        },
+        "arm:hasAdvancementTypeString" : "Exposure",
+        "arm:hasSpentXP" : {
+          "@type" : "xsd:int",
+          "@value" : "17"
+        },
+        "arm:inYear" : 1223
+      }, {
+        "@id" : "_:b33",
+        "@type" : [ "owl:Thing", "_:b0", "rdfs:Resource", "arm:CharacterAdvancement" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#winter1224"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b34"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b35"
+        },
+        "arm:atSeason" : "Autumn",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:autumn1223"
+        },
+        "arm:hasAdvancementDescription" : "Read Animal L15Q14+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 17,
+        "arm:inYear" : 1223
+      }, {
+        "@id" : "_:b24",
+        "@type" : [ "_:b0", "arm:CharacterAdvancement", "rdfs:Resource", "owl:Thing" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#spring1224"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b25"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b26"
+        },
+        "arm:atSeason" : "Winter",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:winter1224"
+        },
+        "arm:awardsXP" : 18,
+        "arm:hasAdvancementDescription" : "Read Ignem L8Q15+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 18,
+        "arm:inYear" : 1224
+      }, {
+        "@id" : "_:b52",
+        "@type" : [ "_:b0", "arm:CharacterAdvancement", "owl:Thing", "rdfs:Resource" ],
+        "arm:advanceToCharacterSheet" : {
+          "@id" : "armchar:cieran#summer1224"
+        },
+        "arm:advanceTrait" : {
+          "@id" : "_:b53"
+        },
+        "arm:advanceTraitList" : {
+          "@id" : "_:b54"
+        },
+        "arm:atSeason" : "Spring",
+        "arm:atSeasonTime" : {
+          "@id" : "arm:spring1224"
+        },
+        "arm:awardsXP" : 19,
+        "arm:hasAdvancementDescription" : "Read Corpus Branch L19Q16+3",
+        "arm:hasAdvancementType" : {
+          "@id" : "arm:Reading"
+        },
+        "arm:hasAdvancementTypeString" : "Reading",
+        "arm:hasSpentXP" : 19,
+        "arm:inYear" : 1224
+      } ]
+    }
+  } ]
+}
