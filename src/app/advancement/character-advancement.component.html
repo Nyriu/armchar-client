@@ -3,7 +3,7 @@
 <div *ngFor="let adv of advancementlist">
    <p-panel class="advancement" 
 	    [toggleable]="true"
-	    [collapsed]="true"
+	    [collapsed]="false"
 	    header="{{adv.season}} {{adv.year}} {{adv.type}}">
       <app-advancement [adv]="adv"></app-advancement>
    </p-panel>
