@@ -15,6 +15,9 @@ import { Saga } from './saga';
 })
 export class ArmcharService {
 
+  static_charsheetURI =   'http://127.0.0.1:8080/summer1217.json';
+  static_advancementURI = 'http://127.0.0.1:8080/adv_cieran.json';
+  //
   charsheetURI = 'http://localhost:8080/armchar/Character/' ;
   advancementURI = 'http://localhost:8080/armchar/Advancement/' ;
 
@@ -24,37 +27,43 @@ export class ArmcharService {
   ) { }
 
   getSaga(id: string): Observable<Saga> {
-     const url = `${this.charsheetURI}${id}`;
+     //const url = `${this.charsheetURI}${id}`;
+     const url = this.static_charsheetURI;
      const cid = `armchar:${id}`;
      return this.http.get<Saga>(url).pipe( map( j => this.process(j,cid) ) ) ;
   }
 
   getCharacter(id: string): Observable<Character> {
-     const url = `${this.charsheetURI}${id}`;
+     //const url = `${this.charsheetURI}${id}`;
+     const url = this.static_charsheetURI;
      const cid = `armchar:${id}`;
-     // console.log( url ) ;
+     console.log( "getCharacter " + url ) ;
      return this.http.get<Character>(url).pipe( map( j => this.process(j,cid) ) ) ;
   }
   getCharsheet2(id: string, t:string): Observable<Charsheet> {
-     const url = `${this.charsheetURI}${id}/${t}`;
+     //const url = `${this.charsheetURI}${id}/${t}`;
+     const url = this.static_charsheetURI;
      const cid = `armchar:${id}#${t}`;
-     // console.log( url ) ;
+     console.log("getCharsheet2 " + url ) ;
      return this.http.get<Charsheet>(url).pipe( 
 	 map( j => this.processFramed(j) ) ) ;
   }
   getCharsheet(id: string, year:number, season:string): Observable<Charsheet> {
-     const url = `${this.charsheetURI}${id}/${year}/${season}`;
-     // console.log( url ) ;
+     //const url = `${this.charsheetURI}${id}/${year}/${season}`;
+     const url = this.static_charsheetURI;
+     console.log("getCharsheet " + url ) ;
      return this.http.get<Charsheet>(url).pipe( 
 	 map( j => this.processFramed(j) ) ) ;
   }
   getAdvancements(id: string ): Observable<any> {
-     const url = `${this.advancementURI}${id}`;
-     console.log( url ) ;
+     //const url = `${this.advancementURI}${id}`;
+     const url = this.static_advancementURI;
+     console.log("getAdvancements " + url ) ;
      return this.http.get<any>(url).pipe( map( j => this.processFramed(j) ) ) ;
   }
   getCharsheetPost( uri: string ): Observable<Charsheet> {
-     const url = `${this.charsheetURI}`;
+     //const url = `${this.charsheetURI}`;
+     const url = this.static_charsheetURI;
      const cid = uri ; // `armchar:${id}#${t}`;
    const headers = new HttpHeaders().set(
      'Content-Type',
