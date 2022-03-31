@@ -11,6 +11,7 @@ export class Spell {
     form: string ;
     level: number ;
     casting: number ;
+    description: string ;
     constructor(ob) {
       // console.log( ob ) ;
       this.spellName = ob["arm:hasLabel"] ;
@@ -21,8 +22,11 @@ export class Spell {
       this.technique = ob["arm:hasTechniqueString"] || "";
       this.form = ob["arm:hasFormString"] || "";
       this.level = ob["arm:hasLevel"] || 0;
+      this.description = ob["arm:hasDescription"] || "";
+
       if ( "arm:hasCastingScore" in ob ) {
          var casting = ob["arm:hasCastingScore"] ;
+
 	 if ( typeof(this.casting) === "number" ) {
 	    this.casting = casting ;
 	 } else {
@@ -38,6 +42,8 @@ export class Spell {
       if ( k in this ) return this[k] 
       else return this.raw[k] ;
     }
+
+
 
 }
 

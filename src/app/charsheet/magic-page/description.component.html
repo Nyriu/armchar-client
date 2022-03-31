@@ -1,8 +1,7 @@
 <div *ngIf="spell">
-<h3>{{spell.spellName}}</h3>
-
-
-<p>{{spell.getSignature()}} (R: {{spell.range}}; D: {{spell.duration}}; T: {{spell.target}})</p>
-
-<p>{{spell.get("arm:hasDescription")}}</p>
+  <h2>{{spell.spellName}}</h2>
+  <p>{{spell.getSignature()}} (R: {{spell.range}}; D: {{spell.duration}}; T: {{spell.target}})</p>
+  <p>
+    {{spell.description === "" ? "No description" : spell.description}}
+  </p>
 </div>
