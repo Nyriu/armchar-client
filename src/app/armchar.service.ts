@@ -15,8 +15,8 @@ import { Saga } from './saga';
 })
 export class ArmcharService {
 
-  static_charsheetURI =   'http://127.0.0.1:8080/summer1217.json';
-  static_advancementURI = 'http://127.0.0.1:8080/adv_cieran.json';
+  static_charsheetURI =   '/assets/summer1217.json';
+  static_advancementURI = '/assets/adv_cieran.json';
   //
   charsheetURI = 'http://localhost:8080/armchar/Character/' ;
   advancementURI = 'http://localhost:8080/armchar/Advancement/' ;
