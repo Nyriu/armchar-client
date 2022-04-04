@@ -12,6 +12,13 @@ export class CharacteristicList {
        this.charlist = r ;
    }
    
+   get(k : string) {
+     for (const x of this.charlist) {
+       if (k === x.label) return x;
+     }
+     return null;
+   }
+   
 }
 
 export class Characteristic {

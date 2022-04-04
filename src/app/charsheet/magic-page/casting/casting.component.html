@@ -1,0 +1,31 @@
+
+<h2>Casting Totals -- ONLY MOCAP --</h2>
+<div>
+<h5>Casting Score:
+<p-dropdown
+    [options]="lang"
+    placeholder="Tech"
+    optionLabel="value"
+    >
+    <!-- [showClear]="true" -->
+</p-dropdown>
++
+<p-dropdown
+    [options]="lang"
+    placeholder="Form"
+    optionLabel="value"
+    >
+    <!-- [showClear]="true" -->
+</p-dropdown>
+
+
+<!-- TODO this should be better than repeating "Stamina", but doesn't work
+<ng-template #staminaScore>{{charlist.get("Stamina").score}}</ng-template>
+{{ staminaScore < 0 ? "- " + staminaScore : "+ " + staminaScore }}
+-->
+
+{{ charlist.get("Stamina").score < 0 ? "- " + charlist.get("Stamina").score : "+ " + charlist.get("Stamina").score }}
+
+</h5>
+</div>
+
