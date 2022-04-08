@@ -1,7 +1,7 @@
 <div *ngIf="trait" class="p-grid">
    <div class="p-col-6"> {{trait.label}} </div>
 
-   <div *ngIf="trait.score" class="p-col-3"> {{trait.score === 0 ? "" : trait.score}} </div>
+   <div class="p-col-3"> {{trait.score === 0 ? "" : trait.score}} </div>
 
-   <div *ngIf="trait.xp" class="p-col-3"> {{trait.xp === 0 ? "" : trait.xp}} </div>
+   <div class="p-col-3"> {{trait.xp === 0 ? "" : trait.xp}} </div>
 </div>
