@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, NgModule } from '@angular/core';
 import { TraitList } from '../../../trait';
 import { Charsheet } from '../../../charsheet';
 import { CharacteristicList } from '../../../characteristic';
@@ -37,10 +37,29 @@ export class CastingComponent implements OnInit {
   //@Input() charsheet: Charsheet  ;
   @Input() charlist: CharacteristicList ;
 
-  constructor() { }
+  selectedTech = { name: "None"     , value: -1 };
+  selectedForm = { name: "None"     , value: -1 };
+  selectedAura = 0;
+
+  staminaScore = -100;
+  castingScore = -100;
+
+
+  constructor() {
+    //console.log("DEBUG charlist = ", this.charlist);
+  }
 
   ngOnInit(): void {
     //console.log("DEBUG charlist = ", this.charlist);
+  }
+  initStamina(): boolean {
+    this.staminaScore = this.charlist.get("Stamina").score;
+    return this.staminaScore !== null;
+  }
+
+  calcCastingScore(): number {
+    this.castingScore = this.selectedTech.value + this.selectedForm.value + this.staminaScore + this.selectedAura;
+    return this.castingScore;
   }
 
   //// TODO

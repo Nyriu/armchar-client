@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-//import { FormsModule } from "@angular/forms";
+import { FormsModule } from "@angular/forms";
 
 import {TableModule} from 'primeng/table';
 import {CardModule} from 'primeng/card';
@@ -31,7 +31,7 @@ import { CastingComponent } from './casting/casting.component';
     CardModule,
     SidebarModule,
     DropdownModule,
-    //FormsModule,
+    FormsModule,
   ],
   exports: [
     MagicPageComponent,

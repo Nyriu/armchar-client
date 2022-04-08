@@ -1,31 +1,50 @@
-
 <h2>Casting Totals -- ONLY MOCAP --</h2>
-<div>
-<h5>Casting Score:
+
+<h5>Technique:
 <p-dropdown
     [options]="lang"
+    [(ngModel)]="selectedTech"
     placeholder="Tech"
     optionLabel="value"
     >
-    <!-- [showClear]="true" -->
 </p-dropdown>
-+
+</h5>
+
+<h5>Form:
 <p-dropdown
     [options]="lang"
+    [(ngModel)]="selectedForm"
     placeholder="Form"
     optionLabel="value"
     >
-    <!-- [showClear]="true" -->
 </p-dropdown>
+</h5>
 
+<h5>Aura:
+<p-dropdown
+    [options]="[0,1,2,3,4]"
+    placeholder="Aura"
+    [(ngModel)]="selectedAura"
+    >
+</p-dropdown>
+</h5>
 
-<!-- TODO this should be better than repeating "Stamina", but doesn't work
-<ng-template #staminaScore>{{charlist.get("Stamina").score}}</ng-template>
-{{ staminaScore < 0 ? "- " + staminaScore : "+ " + staminaScore }}
--->
+<div>
+<h5>Casting Score:
+  {{selectedTech.value}}
+  +
+  {{selectedForm.value}}
 
-{{ charlist.get("Stamina").score < 0 ? "- " + charlist.get("Stamina").score : "+ " + charlist.get("Stamina").score }}
+  {{ initStamina() && staminaScore < 0 ? "- " + staminaScore : "+ " + staminaScore }}
 
+    +
+    {{selectedAura}}
+    =
+    {{ calcCastingScore() }}
+</h5>
+
+<h5>Fatigue Sponting:
+  ({{ castingScore }} + /r 1d10) / 2
 </h5>
 </div>
 
