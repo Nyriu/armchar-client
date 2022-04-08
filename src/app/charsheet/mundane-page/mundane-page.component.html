@@ -1,48 +1,48 @@
-<div class="p-grid">
-  <div class="p-col">
-    <div class="p-grid">
-      <div *ngIf="charsheet" class="p-col-6">
+<div class="grid">
+  <div class="col">
+    <div class="grid">
+      <div *ngIf="charsheet" class="col-6">
 	 <app-effect-trait [trait]="charsheet.othertraits['Decrepitude']">
 	 </app-effect-trait>
       </div>
-      <div *ngIf="charsheet" class="p-col-6">
+      <div *ngIf="charsheet" class="col-6">
 	 <app-effect-trait [trait]="charsheet.othertraits['Warping']">
 	 </app-effect-trait>
       </div>
-      <div *ngIf="charsheet" class="p-col-6">
+      <div *ngIf="charsheet" class="col-6">
 	 <p-card>
 	 <app-score [trait]="charsheet.othertraits['Confidence']">
 	 </app-score>
 	 </p-card>
       </div>
-      <div class="p-col-12">
+      <div class="col-12">
         <p-panel header="Characteristics" [toggleable]="true" class="dark-panel">
         <app-characteristics [charlist]="get('charlist')"></app-characteristics>
         </p-panel>
       </div>
-      <div class="p-col-6">
+      <div class="col-6">
         <p-panel header="Virtues" [toggleable]="true" class="dark-panel">
           <app-vf [type]="'Virtue'" [vf]="get('hasVirtue')"></app-vf>
         </p-panel>
       </div>
-      <div class="p-col-6">
+      <div class="col-6">
         <p-panel header="Flaws" [toggleable]="true" class="dark-panel">
           <app-vf [type]="'Flaw'" [vf]="get('hasFlaw')"></app-vf>
         </p-panel>
       </div>
-      <div class="p-col-12">
+      <div class="col-12">
         <p-panel header="Personality Traits" [toggleable]="true" class="dark-panel">
           <app-ptrait [ptrait]="get('ptraits')"></app-ptrait>
         </p-panel>
       </div>
     </div>
-    <div class="p-col-12">
+    <div class="col-12">
       <p-panel header="Reputations" [toggleable]="true" class="dark-panel">
         <app-reputation [reputation]="get('hasReputation')"></app-reputation>
       </p-panel>
     </div>
   </div>
-  <div class="p-col">
+  <div class="col">
     <p-panel header="Abilities" [toggleable]="true" class="dark-panel">
       <app-abilities [ablist]="get('ablist')"></app-abilities>
     </p-panel>

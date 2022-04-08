@@ -1,24 +1,24 @@
-<div class="p-grid">
-  <div class="p-col-4">
+<div class="grid">
+  <div class="col-4">
     <div *ngIf="charsheet" class="header">
      {{charsheet.name}}
     </div>
   </div>
-  <div class="p-col-4">
+  <div class="col-4">
     <div *ngIf="charsheet" class="header">
      {{charsheet.get("inYear")}}
      {{charsheet.get("atSeason")}}
     </div>
   </div>
-  <div class="p-col-4">
+  <div class="col-4">
 	<app-season-selector>
 	</app-season-selector>
   </div>
-  <div class="p-col-8">
+  <div class="col-8">
     <app-charhead [charsheet]="charsheet"></app-charhead>
     <app-charsheet [charsheet]="charsheet"></app-charsheet>
   </div>
-  <div class="p-col-4">
+  <div class="col-4">
     <app-character-advancement [charname]="char"></app-character-advancement>
   </div>
 </div>
