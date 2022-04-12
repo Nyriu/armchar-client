@@ -28,6 +28,7 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { CharacterComponent } from './character/character.component';
 import { PageCharsheetComponent } from './page-charsheet.component';
 import { SeasonSelectorComponent } from './character/season-selector.component';
+import { PageOneComponent } from './experiments/page-one/page-one.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { SeasonSelectorComponent } from './character/season-selector.component';
     AdvancementModule,
     RouterModule.forRoot([
     { path: '', redirectTo: 'charsheet', pathMatch: 'full'  },
+    { path: 'experiments', component: PageOneComponent, },
     { path: 'character', component: CharacterComponent, },
     { path: 'charsheet', component: PageCharsheetComponent, },
     { path: 'adv', component: PageAdvancementsComponent },
